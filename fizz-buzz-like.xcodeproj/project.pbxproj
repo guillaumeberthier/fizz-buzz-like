@@ -18,6 +18,7 @@
 		44886940269309BD002927C5 /* FormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488693F269309BD002927C5 /* FormPresenter.swift */; };
 		44886945269309C7002927C5 /* FormPresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44886944269309C7002927C5 /* FormPresenterImplementation.swift */; };
 		4488695026930F64002927C5 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488694F26930F64002927C5 /* FormViewModel.swift */; };
+		4488696E2693379D002927C5 /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488696D2693379D002927C5 /* FormTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		4488693F269309BD002927C5 /* FormPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPresenter.swift; sourceTree = "<group>"; };
 		44886944269309C7002927C5 /* FormPresenterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPresenterImplementation.swift; sourceTree = "<group>"; };
 		4488694F26930F64002927C5 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		4488696D2693379D002927C5 /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			children = (
 				4488692F2693099F002927C5 /* FormViewContract.swift */,
 				4488693A269309B3002927C5 /* FormViewController.swift */,
+				4488696D2693379D002927C5 /* FormTableViewCell.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			files = (
 				448868D32692F85C002927C5 /* AppDelegate.swift in Sources */,
 				44886940269309BD002927C5 /* FormPresenter.swift in Sources */,
+				4488696E2693379D002927C5 /* FormTableViewCell.swift in Sources */,
 				448869302693099F002927C5 /* FormViewContract.swift in Sources */,
 				4488693B269309B3002927C5 /* FormViewController.swift in Sources */,
 				4488692226930445002927C5 /* ApplicationCoordinator.swift in Sources */,

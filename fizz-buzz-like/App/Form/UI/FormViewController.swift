@@ -8,12 +8,19 @@
 import Foundation
 import UIKit
 
+private enum Constants {
+    static let horizontalMargin: CGFloat = 16.0
+    static let verticalMargin: CGFloat = 32.0
+    static let buttonHeight: CGFloat = 44.0
+}
+
 class FormViewController: UIViewController, FormViewContract {
 
     var presenter: FormPresenter?
 
     private var viewModel = FormViewModel(cells: [])
     private lazy var tableView = self.createTableView()
+    private lazy var computeButton = self.createComputeButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,11 +42,26 @@ class FormViewController: UIViewController, FormViewContract {
         title = "New request"
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(computeButton)
+        computeButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            computeButton.bottomAnchor.constraint(
+                equalTo: view.bottomAnchor,
+                constant: -Constants.verticalMargin
+            ),
+            computeButton.trailingAnchor.constraint(
+                equalTo: view.trailingAnchor,
+                constant: -Constants.horizontalMargin
+            ),
+            computeButton.leadingAnchor.constraint(
+                equalTo: view.leadingAnchor,
+                constant: Constants.horizontalMargin
+            ),
+            computeButton.heightAnchor.constraint(equalToConstant: Constants.buttonHeight),
         ])
     }
 
@@ -54,6 +76,17 @@ class FormViewController: UIViewController, FormViewContract {
         tableView.separatorInset = .zero
         tableView.keyboardDismissMode = .onDrag
         return tableView
+    }
+
+    private func createComputeButton() -> UIButton {
+        let button = UIButton(type: .system)
+        button.setTitle("Compute", for: .normal)
+        button.addTarget(self, action: #selector(didSelectComputeButton), for: .touchUpInside)
+        return button
+    }
+
+    @objc private func didSelectComputeButton() {
+        presenter?.compute()
     }
 }
 

@@ -38,6 +38,10 @@ class FormPresenterImplementation: FormPresenter {
         }
     }
 
+    func compute() {
+        // TODO (Guillaume Berthier) Compute FizzBuzzRequest
+    }
+
     // MARK: - Private
 
     private func updateView(with request: FormRequestInput) {

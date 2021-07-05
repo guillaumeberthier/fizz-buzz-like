@@ -9,4 +9,5 @@ import Foundation
 
 protocol FormPresenter {
     func start()
+    func value(for cellId: FormCellViewModel.Identifier, didChange newValue: String)
 }

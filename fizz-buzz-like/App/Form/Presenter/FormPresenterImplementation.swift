@@ -10,6 +10,8 @@ import Foundation
 class FormPresenterImplementation: FormPresenter {
 
     private weak var viewContract: FormViewContract?
+    private let mapper = FormViewModelMapper()
+    private var formRequestInput = FormRequestInput.initial
 
     init(viewContract: FormViewContract) {
         self.viewContract = viewContract
@@ -18,6 +20,28 @@ class FormPresenterImplementation: FormPresenter {
     // MARK: - FormPresenter
 
     func start() {
-        // TODO (Guillaume Berthier) Init view model to present to view controller
+        updateView(with: formRequestInput)
+    }
+
+    func value(for cellId: FormCellViewModel.Identifier, didChange newValue: String) {
+        switch cellId {
+        case .firstNumber:
+            formRequestInput = formRequestInput.withFirstDivider(newValue)
+        case .secondNumber:
+            formRequestInput = formRequestInput.withSecondDivider(newValue)
+        case .limit:
+            formRequestInput = formRequestInput.withLimit(newValue)
+        case .firstText:
+            formRequestInput = formRequestInput.withFirstText(newValue)
+        case .secondText:
+            formRequestInput = formRequestInput.withSecondText(newValue)
+        }
+    }
+
+    // MARK: - Private
+
+    private func updateView(with request: FormRequestInput) {
+        let viewModel = mapper.map(model: request)
+        viewContract?.display(viewModel: viewModel)
     }
 }

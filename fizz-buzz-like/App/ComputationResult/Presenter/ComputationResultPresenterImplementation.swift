@@ -31,8 +31,10 @@ class ComputationResultPresenterImplementation: ComputationResultPresenter {
     // MARK: - Private
 
     private func compute(request: FizzBuzzRequest) {
+        viewContract?.showLoading()
         computeInteractor.execute(request: request) { [weak self] result in
             guard let self = self else { return }
+            self.viewContract?.hideLoading()
             switch result {
             case .success(let response):
                 let viewModel = self.mapper.map(response: response)

@@ -17,6 +17,7 @@ class ComputationResultViewController: UIViewController, ComputationResultViewCo
     var presenter: ComputationResultPresenter?
 
     private lazy var textView = self.createTextView()
+    private lazy var loadingView = UIActivityIndicatorView(style: .large)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,14 @@ class ComputationResultViewController: UIViewController, ComputationResultViewCo
         textView.text = viewModel.text
     }
 
+    func showLoading() {
+        loadingView.startAnimating()
+    }
+
+    func hideLoading() {
+        loadingView.stopAnimating()
+    }
+
     // MARK: - Private
 
     private func setup() {
@@ -41,11 +50,15 @@ class ComputationResultViewController: UIViewController, ComputationResultViewCo
         view.backgroundColor = .systemBackground
         view.addSubview(textView)
         textView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(loadingView)
+        loadingView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             textView.topAnchor.constraint(equalTo: view.topAnchor),
             textView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             textView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             textView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
     }
 

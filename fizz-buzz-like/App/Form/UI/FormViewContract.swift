@@ -9,4 +9,5 @@ import Foundation
 
 protocol FormViewContract: AnyObject {
     func display(viewModel: FormViewModel)
+    func displayError(_ error: AppError)
 }

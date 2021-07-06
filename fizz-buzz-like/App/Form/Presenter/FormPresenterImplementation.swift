@@ -39,7 +39,25 @@ class FormPresenterImplementation: FormPresenter {
     }
 
     func compute() {
-        // TODO (Guillaume Berthier) Compute FizzBuzzRequest
+        var allowComputing = true
+        if Int(formRequestInput.firstDivider) == nil {
+            formRequestInput = formRequestInput.withFirstDivider("")
+            allowComputing = false
+        }
+        if Int(formRequestInput.secondDivider) == nil {
+            formRequestInput = formRequestInput.withSecondDivider("")
+            allowComputing = false
+        }
+        if Int(formRequestInput.limit) == nil {
+            formRequestInput = formRequestInput.withLimit("")
+            allowComputing = false
+        }
+        guard allowComputing else {
+            viewContract?.displayError(.inputError)
+            updateView(with: formRequestInput)
+            return
+        }
+        // TODO (Guillaume Berthier) Compute
     }
 
     // MARK: - Private

@@ -39,7 +39,7 @@ class FormViewController: UIViewController, FormViewContract {
 
     private func setup() {
         view.backgroundColor = .systemBackground
-        title = "New request"
+        title = "form_title".localized()
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(computeButton)
@@ -91,7 +91,7 @@ class FormViewController: UIViewController, FormViewContract {
 
     private func createComputeButton() -> UIButton {
         let button = UIButton(type: .system)
-        button.setTitle("Compute", for: .normal)
+        button.setTitle("form_compute_button".localized(), for: .normal)
         button.addTarget(self, action: #selector(didSelectComputeButton), for: .touchUpInside)
         return button
     }

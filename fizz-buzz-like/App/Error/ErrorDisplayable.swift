@@ -18,11 +18,11 @@ extension UIViewController: ErrorDisplayable {
 
     func display(error: AppError) {
         let alert = UIAlertController(
-            title: "Error",
+            title: "error".localized(),
             message: error.localizedDescription,
             preferredStyle: .alert
         )
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "ok".localized(), style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
 }

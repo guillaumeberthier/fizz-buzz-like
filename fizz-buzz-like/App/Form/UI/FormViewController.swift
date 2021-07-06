@@ -106,6 +106,8 @@ class FormViewController: UIViewController, FormViewContract {
         return button
     }
 
+    // MARK: - Action
+
     @objc private func didSelectComputeButton() {
         presenter?.compute()
     }

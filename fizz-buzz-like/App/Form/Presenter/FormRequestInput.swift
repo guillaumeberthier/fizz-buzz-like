@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Representing the user input
 struct FormRequestInput {
     let firstDivider: String
     let secondDivider: String

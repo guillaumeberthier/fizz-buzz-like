@@ -8,6 +8,10 @@
 import Foundation
 
 enum AppError: LocalizedError {
+
+    /// Bad input has been set.
+    /// - input was not an Int where we expected one;
+    /// - input is higher than a 64 bits Int;
     case inputError
 
     var errorDescription: String? {

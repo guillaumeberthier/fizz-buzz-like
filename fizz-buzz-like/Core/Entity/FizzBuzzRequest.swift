@@ -7,6 +7,12 @@
 
 import Foundation
 
+/**
+ Information to compute a fizz-buzz:
+ from 1 to *limit*, if *firstDivider* divides current number, print *firstText*;
+ If *secondDivider* divides current number, print *secondText*;
+ Otherwise print current number.
+ */
 struct FizzBuzzRequest {
     let firstDivider: Int
     let secondDivider: Int

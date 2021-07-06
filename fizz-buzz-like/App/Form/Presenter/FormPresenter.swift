@@ -8,12 +8,21 @@
 import Foundation
 
 protocol FormPresenter {
+
+    /// View did load
     func start()
+
     func value(for cellId: FormCellViewModel.Identifier, didChange newValue: String)
+
+    /// User requests to compute fizz-buzz with the input he set
     func compute()
+
+    /// User requests to display statitistics view
     func requestStatistics()
 }
 
 protocol FormPresenterDelegate: AnyObject {
+
+    /// User requests to display statitistics view
     func formPresenterDidRequestStatistics(_ presenter: FormPresenter)
 }

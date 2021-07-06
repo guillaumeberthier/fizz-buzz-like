@@ -27,6 +27,10 @@
 		448869C2269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869C1269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift */; };
 		448869C726945AFE002927C5 /* FizzBuzzResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869C626945AFE002927C5 /* FizzBuzzResponse.swift */; };
 		448869CF269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869CE269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift */; };
+		448869E1269490BA002927C5 /* ComputationResultViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869E0269490BA002927C5 /* ComputationResultViewContract.swift */; };
+		448869E6269490DF002927C5 /* ComputationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869E5269490DF002927C5 /* ComputationResultViewController.swift */; };
+		448869EB2694910E002927C5 /* ComputationResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869EA2694910E002927C5 /* ComputationResultPresenter.swift */; };
+		448869F026949166002927C5 /* ComputationResultPresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869EF26949166002927C5 /* ComputationResultPresenterImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		448869C1269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeFizzBuzzInteractorImplementation.swift; sourceTree = "<group>"; };
 		448869C626945AFE002927C5 /* FizzBuzzResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzResponse.swift; sourceTree = "<group>"; };
 		448869CE269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeFizzBuzzInteractorTests.swift; sourceTree = "<group>"; };
+		448869E0269490BA002927C5 /* ComputationResultViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationResultViewContract.swift; sourceTree = "<group>"; };
+		448869E5269490DF002927C5 /* ComputationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationResultViewController.swift; sourceTree = "<group>"; };
+		448869EA2694910E002927C5 /* ComputationResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationResultPresenter.swift; sourceTree = "<group>"; };
+		448869EF26949166002927C5 /* ComputationResultPresenterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationResultPresenterImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +165,7 @@
 		448869052692F8DA002927C5 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				448869DC26949039002927C5 /* ComputationResult */,
 				4488692926930957002927C5 /* Form */,
 			);
 			path = App;
@@ -250,6 +259,41 @@
 				448869C1269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift */,
 			);
 			path = ComputeFizzBuzz;
+			sourceTree = "<group>";
+		};
+		448869DC26949039002927C5 /* ComputationResult */ = {
+			isa = PBXGroup;
+			children = (
+				448869DF269490A4002927C5 /* UI */,
+				448869DE2694909F002927C5 /* ViewModel */,
+				448869DD26949096002927C5 /* Presenter */,
+			);
+			path = ComputationResult;
+			sourceTree = "<group>";
+		};
+		448869DD26949096002927C5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				448869EA2694910E002927C5 /* ComputationResultPresenter.swift */,
+				448869EF26949166002927C5 /* ComputationResultPresenterImplementation.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		448869DE2694909F002927C5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		448869DF269490A4002927C5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				448869E0269490BA002927C5 /* ComputationResultViewContract.swift */,
+				448869E5269490DF002927C5 /* ComputationResultViewController.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,17 +426,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				448868D32692F85C002927C5 /* AppDelegate.swift in Sources */,
+				448869E1269490BA002927C5 /* ComputationResultViewContract.swift in Sources */,
 				448869C726945AFE002927C5 /* FizzBuzzResponse.swift in Sources */,
 				44886940269309BD002927C5 /* FormPresenter.swift in Sources */,
 				448869892694482D002927C5 /* FormRequestInput.swift in Sources */,
 				4488696626931559002927C5 /* FormViewModelMapper.swift in Sources */,
 				448869BD269459CF002927C5 /* ComputeFizzBuzzInteractor.swift in Sources */,
+				448869E6269490DF002927C5 /* ComputationResultViewController.swift in Sources */,
 				4488696E2693379D002927C5 /* FormTableViewCell.swift in Sources */,
 				448869C2269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift in Sources */,
 				448869302693099F002927C5 /* FormViewContract.swift in Sources */,
+				448869F026949166002927C5 /* ComputationResultPresenterImplementation.swift in Sources */,
 				4488693B269309B3002927C5 /* FormViewController.swift in Sources */,
 				4488692226930445002927C5 /* ApplicationCoordinator.swift in Sources */,
 				4488695026930F64002927C5 /* FormViewModel.swift in Sources */,
+				448869EB2694910E002927C5 /* ComputationResultPresenter.swift in Sources */,
 				448869732693516E002927C5 /* AppError.swift in Sources */,
 				44886945269309C7002927C5 /* FormPresenterImplementation.swift in Sources */,
 				44886961269313A3002927C5 /* FizzBuzzRequest.swift in Sources */,

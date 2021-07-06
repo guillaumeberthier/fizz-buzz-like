@@ -19,6 +19,7 @@ class ApplicationCoordinator {
 
     func start() {
         let formViewController = FormViewController()
+        // TODO (Guillaume Berthier) Inject using DI
         formViewController.presenter = FormPresenterImplementation(
             viewContract: formViewController,
             delegate: self
@@ -34,5 +35,18 @@ extension ApplicationCoordinator: FormPresenterDelegate {
 
     func formPresenterDidRequestStatistics(_ presenter: FormPresenter) {
         // TODO (Guillaume Berthier) Display stats
+    }
+
+    func formPresenter(_ presenter: FormPresenter, didRequestCompute request: FizzBuzzRequest) {
+        // TODO (Guillaume Berthier) Inject using DI
+        let interactor = ComputeFizzBuzzInteractorImplementation()
+        let resultViewController = ComputationResultViewController()
+        // TODO (Guillaume Berthier) Inject using DI
+        resultViewController.presenter = ComputationResultPresenterImplementation(
+            viewContract: resultViewController,
+            fizzBuzzRequest: request,
+            computeInteractor: interactor
+        )
+        navigationViewController.pushViewController(resultViewController, animated: true)
     }
 }

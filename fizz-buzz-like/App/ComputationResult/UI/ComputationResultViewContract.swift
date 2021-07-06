@@ -7,5 +7,6 @@
 
 import Foundation
 
-protocol ComputationResultViewContract: AnyObject {
+protocol ComputationResultViewContract: AnyObject, ErrorDisplayable {
+    func display(viewModel: ComputationResultViewModel)
 }

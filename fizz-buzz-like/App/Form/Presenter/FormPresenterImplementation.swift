@@ -51,7 +51,10 @@ class FormPresenterImplementation: FormPresenter {
             formRequestInput = formRequestInput.withSecondDivider("")
             allowComputing = false
         }
-        if Int(formRequestInput.limit) == nil {
+        if
+            Int(formRequestInput.limit) == nil
+            || Int(formRequestInput.limit) ?? 0 < 1
+        {
             formRequestInput = formRequestInput.withLimit("")
             allowComputing = false
         }

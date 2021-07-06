@@ -14,10 +14,6 @@ class ComputeFizzBuzzInteractorImplementation: ComputeFizzBuzzInteractor {
     func execute(request: FizzBuzzRequest,
                  completion: @escaping (Result<FizzBuzzResponse, AppError>) -> Void) {
         DispatchQueue.global().async {
-            guard request.isValid else {
-                DispatchQueue.main.async { completion(.failure(.invalidRequest)) }
-                return
-            }
             // TODO (Guillaume Berthier) Register request to handle statistics
             var words: [String] = []
             for i in 1...request.limit {
@@ -40,12 +36,5 @@ class ComputeFizzBuzzInteractorImplementation: ComputeFizzBuzzInteractor {
             let response = FizzBuzzResponse(words: words)
             DispatchQueue.main.async { completion(.success(response)) }
         }
-    }
-}
-
-private extension FizzBuzzRequest {
-
-    var isValid: Bool {
-        return limit > 0
     }
 }

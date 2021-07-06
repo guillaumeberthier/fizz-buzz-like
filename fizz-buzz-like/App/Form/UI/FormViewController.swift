@@ -73,6 +73,17 @@ class FormViewController: UIViewController, FormViewContract {
             ),
             computeButton.heightAnchor.constraint(equalToConstant: Constants.buttonHeight),
         ])
+        setupNavBar()
+    }
+
+    private func setupNavBar() {
+        let statsButton = UIBarButtonItem(
+            image: UIImage(systemName: "plus.slash.minus"),
+            style: .plain,
+            target: self,
+            action: #selector(didSelectStatsButton)
+        )
+        navigationItem.rightBarButtonItem = statsButton
     }
 
     private func createTableView() -> UITableView {
@@ -97,6 +108,10 @@ class FormViewController: UIViewController, FormViewContract {
 
     @objc private func didSelectComputeButton() {
         presenter?.compute()
+    }
+
+    @objc private func didSelectStatsButton() {
+        presenter?.requestStatistics()
     }
 }
 

@@ -20,9 +20,19 @@ class ApplicationCoordinator {
     func start() {
         let formViewController = FormViewController()
         formViewController.presenter = FormPresenterImplementation(
-            viewContract: formViewController
+            viewContract: formViewController,
+            delegate: self
         )
         navigationViewController.viewControllers = [formViewController]
         window.rootViewController = navigationViewController
+    }
+}
+
+extension ApplicationCoordinator: FormPresenterDelegate {
+
+    // MARK: - FormPresenterDelegate
+
+    func formPresenterDidRequestStatistics(_ presenter: FormPresenter) {
+        // TODO (Guillaume Berthier) Display stats
     }
 }

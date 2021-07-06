@@ -10,11 +10,14 @@ import Foundation
 class FormPresenterImplementation: FormPresenter {
 
     private weak var viewContract: FormViewContract?
+    private weak var delegate: FormPresenterDelegate?
     private let mapper = FormViewModelMapper()
     private var formRequestInput = FormRequestInput.initial
 
-    init(viewContract: FormViewContract) {
+    init(viewContract: FormViewContract,
+         delegate: FormPresenterDelegate?) {
         self.viewContract = viewContract
+        self.delegate = delegate
     }
 
     // MARK: - FormPresenter
@@ -58,6 +61,10 @@ class FormPresenterImplementation: FormPresenter {
             return
         }
         // TODO (Guillaume Berthier) Compute
+    }
+
+    func requestStatistics() {
+        delegate?.formPresenterDidRequestStatistics(self)
     }
 
     // MARK: - Private

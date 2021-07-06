@@ -9,15 +9,20 @@ import Foundation
 
 enum AppError: LocalizedError {
 
-    /// Bad input has been set.
+    /// Invalid input has been set.
     /// - input was not an Int where we expected one;
     /// - input is higher than a 64 bits Int;
-    case inputError
+    case invalidInput
+
+    /// - limit should be greater than 0
+    case invalidRequest
 
     var errorDescription: String? {
         switch self {
-        case .inputError:
-            return "Input Error"
+        case .invalidInput:
+            return "Invalid input"
+        case .invalidRequest:
+            return "Invalid request"
         }
     }
 }

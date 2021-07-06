@@ -14,9 +14,15 @@ import Foundation
  Otherwise print current number.
  */
 struct FizzBuzzRequest {
+
     let firstDivider: Int
+
     let secondDivider: Int
+
+    /// Greater than 0
     let limit: Int
+
     let firstText: String
+
     let secondText: String
 }

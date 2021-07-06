@@ -22,10 +22,6 @@ class ComputationResultViewController: UIViewController, ComputationResultViewCo
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         presenter?.start()
     }
 

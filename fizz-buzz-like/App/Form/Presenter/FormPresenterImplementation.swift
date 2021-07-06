@@ -56,7 +56,7 @@ class FormPresenterImplementation: FormPresenter {
             allowComputing = false
         }
         guard allowComputing else {
-            viewContract?.displayError(.invalidInput)
+            viewContract?.display(error: .invalidInput)
             updateView(with: formRequestInput)
             return
         }

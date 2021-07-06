@@ -14,10 +14,15 @@ enum AppError: LocalizedError {
     /// - input is higher than a 64 bits Int;
     case invalidInput
 
+    /// - limit should be greater than 0
+    case invalidRequest
+
     var errorDescription: String? {
         switch self {
         case .invalidInput:
             return "Invalid input"
+        case .invalidRequest:
+            return "Invalid request"
         }
     }
 }

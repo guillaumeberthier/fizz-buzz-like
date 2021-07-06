@@ -23,6 +23,9 @@
 		4488696E2693379D002927C5 /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488696D2693379D002927C5 /* FormTableViewCell.swift */; };
 		448869732693516E002927C5 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869722693516E002927C5 /* AppError.swift */; };
 		448869892694482D002927C5 /* FormRequestInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869882694482D002927C5 /* FormRequestInput.swift */; };
+		448869BD269459CF002927C5 /* ComputeFizzBuzzInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869BC269459CF002927C5 /* ComputeFizzBuzzInteractor.swift */; };
+		448869C2269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869C1269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift */; };
+		448869C726945AFE002927C5 /* FizzBuzzResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869C626945AFE002927C5 /* FizzBuzzResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		4488696D2693379D002927C5 /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
 		448869722693516E002927C5 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		448869882694482D002927C5 /* FormRequestInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRequestInput.swift; sourceTree = "<group>"; };
+		448869BC269459CF002927C5 /* ComputeFizzBuzzInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeFizzBuzzInteractor.swift; sourceTree = "<group>"; };
+		448869C1269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeFizzBuzzInteractorImplementation.swift; sourceTree = "<group>"; };
+		448869C626945AFE002927C5 /* FizzBuzzResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				4488695F26931380002927C5 /* Entity */,
+				448869BA269459B6002927C5 /* Interactor */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -218,10 +225,28 @@
 		4488695F26931380002927C5 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				44886960269313A3002927C5 /* FizzBuzzRequest.swift */,
 				448869722693516E002927C5 /* AppError.swift */,
+				44886960269313A3002927C5 /* FizzBuzzRequest.swift */,
+				448869C626945AFE002927C5 /* FizzBuzzResponse.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		448869BA269459B6002927C5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				448869BB269459BE002927C5 /* ComputeFizzBuzz */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		448869BB269459BE002927C5 /* ComputeFizzBuzz */ = {
+			isa = PBXGroup;
+			children = (
+				448869BC269459CF002927C5 /* ComputeFizzBuzzInteractor.swift */,
+				448869C1269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift */,
+			);
+			path = ComputeFizzBuzz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,10 +379,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				448868D32692F85C002927C5 /* AppDelegate.swift in Sources */,
+				448869C726945AFE002927C5 /* FizzBuzzResponse.swift in Sources */,
 				44886940269309BD002927C5 /* FormPresenter.swift in Sources */,
 				448869892694482D002927C5 /* FormRequestInput.swift in Sources */,
 				4488696626931559002927C5 /* FormViewModelMapper.swift in Sources */,
+				448869BD269459CF002927C5 /* ComputeFizzBuzzInteractor.swift in Sources */,
 				4488696E2693379D002927C5 /* FormTableViewCell.swift in Sources */,
+				448869C2269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift in Sources */,
 				448869302693099F002927C5 /* FormViewContract.swift in Sources */,
 				4488693B269309B3002927C5 /* FormViewController.swift in Sources */,
 				4488692226930445002927C5 /* ApplicationCoordinator.swift in Sources */,

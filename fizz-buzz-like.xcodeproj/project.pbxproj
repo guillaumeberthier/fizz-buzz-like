@@ -26,6 +26,7 @@
 		448869BD269459CF002927C5 /* ComputeFizzBuzzInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869BC269459CF002927C5 /* ComputeFizzBuzzInteractor.swift */; };
 		448869C2269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869C1269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift */; };
 		448869C726945AFE002927C5 /* FizzBuzzResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869C626945AFE002927C5 /* FizzBuzzResponse.swift */; };
+		448869CF269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869CE269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		448869BC269459CF002927C5 /* ComputeFizzBuzzInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeFizzBuzzInteractor.swift; sourceTree = "<group>"; };
 		448869C1269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeFizzBuzzInteractorImplementation.swift; sourceTree = "<group>"; };
 		448869C626945AFE002927C5 /* FizzBuzzResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzResponse.swift; sourceTree = "<group>"; };
+		448869CE269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeFizzBuzzInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				448868E92692F85D002927C5 /* fizz_buzz_likeTests.swift */,
+				448869CE269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift */,
 				448868EB2692F85D002927C5 /* Info.plist */,
 			);
 			path = "fizz-buzz-likeTests";
@@ -400,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				448869CF269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift in Sources */,
 				448868EA2692F85D002927C5 /* fizz_buzz_likeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

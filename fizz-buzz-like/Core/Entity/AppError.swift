@@ -20,9 +20,9 @@ enum AppError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .invalidInput:
-            return "Invalid input"
+            return "error_invalid_input".localized()
         case .invalidRequest:
-            return "Invalid request"
+            return "error_invalid_request".localized()
         }
     }
 }

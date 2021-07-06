@@ -42,7 +42,7 @@ class ComputationResultViewController: UIViewController, ComputationResultViewCo
     // MARK: - Private
 
     private func setup() {
-        title = "Fizz Buzz result"
+        title = "computation_result_title".localized()
         view.backgroundColor = .systemBackground
         view.addSubview(textView)
         textView.translatesAutoresizingMaskIntoConstraints = false

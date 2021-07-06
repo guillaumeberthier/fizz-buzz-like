@@ -7,7 +7,6 @@
 
 import Foundation
 
-protocol FormViewContract: AnyObject {
+protocol FormViewContract: AnyObject, ErrorDisplayable {
     func display(viewModel: FormViewModel)
-    func displayError(_ error: AppError)
 }

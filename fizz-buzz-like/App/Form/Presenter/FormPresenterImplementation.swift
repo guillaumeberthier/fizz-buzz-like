@@ -51,16 +51,19 @@ class FormPresenterImplementation: FormPresenter {
             formRequestInput = formRequestInput.withSecondDivider("")
             allowComputing = false
         }
-        if Int(formRequestInput.limit) == nil {
+        if
+            Int(formRequestInput.limit) == nil
+            || Int(formRequestInput.limit) ?? 0 < 1
+        {
             formRequestInput = formRequestInput.withLimit("")
             allowComputing = false
         }
         guard allowComputing else {
-            viewContract?.displayError(.invalidInput)
+            viewContract?.display(error: .invalidInput)
             updateView(with: formRequestInput)
             return
         }
-        // TODO (Guillaume Berthier) Compute
+        compute(input: formRequestInput)
     }
 
     func requestStatistics() {
@@ -72,5 +75,24 @@ class FormPresenterImplementation: FormPresenter {
     private func updateView(with request: FormRequestInput) {
         let viewModel = mapper.map(model: request)
         viewContract?.display(viewModel: viewModel)
+    }
+
+    private func compute(input: FormRequestInput) {
+        guard
+            let firstDivider = Int(formRequestInput.firstDivider),
+            let secondDivider = Int(formRequestInput.secondDivider),
+            let limit = Int(formRequestInput.limit)
+        else {
+            assertionFailure("FormRequestInput should be valid")
+            return
+        }
+        let request = FizzBuzzRequest(
+            firstDivider: firstDivider,
+            secondDivider: secondDivider,
+            limit: limit,
+            firstText: formRequestInput.firstText,
+            secondText: formRequestInput.secondText
+        )
+        delegate?.formPresenter(self, didRequestCompute: request)
     }
 }

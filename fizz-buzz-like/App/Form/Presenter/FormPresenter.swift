@@ -25,4 +25,7 @@ protocol FormPresenterDelegate: AnyObject {
 
     /// User requests to display statitistics view
     func formPresenterDidRequestStatistics(_ presenter: FormPresenter)
+
+    /// User requests to compute the request he created from the form
+    func formPresenter(_ presenter: FormPresenter, didRequestCompute request: FizzBuzzRequest)
 }

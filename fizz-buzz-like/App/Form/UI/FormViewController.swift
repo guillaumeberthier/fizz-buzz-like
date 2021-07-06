@@ -35,16 +35,6 @@ class FormViewController: UIViewController, FormViewContract {
         tableView.reloadData()
     }
 
-    func displayError(_ error: AppError) {
-        let alert = UIAlertController(
-            title: "Error",
-            message: error.localizedDescription,
-            preferredStyle: .alert
-        )
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
-    }
-
     // MARK: - Private
 
     private func setup() {

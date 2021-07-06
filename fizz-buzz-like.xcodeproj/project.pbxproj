@@ -31,6 +31,8 @@
 		448869E6269490DF002927C5 /* ComputationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869E5269490DF002927C5 /* ComputationResultViewController.swift */; };
 		448869EB2694910E002927C5 /* ComputationResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869EA2694910E002927C5 /* ComputationResultPresenter.swift */; };
 		448869F026949166002927C5 /* ComputationResultPresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869EF26949166002927C5 /* ComputationResultPresenterImplementation.swift */; };
+		448869FB26949418002927C5 /* ComputationResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869FA26949418002927C5 /* ComputationResultViewModel.swift */; };
+		44886A0026949440002927C5 /* ComputationResultViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869FF26949440002927C5 /* ComputationResultViewModelMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		448869E5269490DF002927C5 /* ComputationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationResultViewController.swift; sourceTree = "<group>"; };
 		448869EA2694910E002927C5 /* ComputationResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationResultPresenter.swift; sourceTree = "<group>"; };
 		448869EF26949166002927C5 /* ComputationResultPresenterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationResultPresenterImplementation.swift; sourceTree = "<group>"; };
+		448869FA26949418002927C5 /* ComputationResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationResultViewModel.swift; sourceTree = "<group>"; };
+		448869FF26949440002927C5 /* ComputationResultViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationResultViewModelMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +287,8 @@
 		448869DE2694909F002927C5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				448869FA26949418002927C5 /* ComputationResultViewModel.swift */,
+				448869FF26949440002927C5 /* ComputationResultViewModelMapper.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 			files = (
 				448868D32692F85C002927C5 /* AppDelegate.swift in Sources */,
 				448869E1269490BA002927C5 /* ComputationResultViewContract.swift in Sources */,
+				44886A0026949440002927C5 /* ComputationResultViewModelMapper.swift in Sources */,
 				448869C726945AFE002927C5 /* FizzBuzzResponse.swift in Sources */,
 				44886940269309BD002927C5 /* FormPresenter.swift in Sources */,
 				448869892694482D002927C5 /* FormRequestInput.swift in Sources */,
@@ -440,6 +447,7 @@
 				4488693B269309B3002927C5 /* FormViewController.swift in Sources */,
 				4488692226930445002927C5 /* ApplicationCoordinator.swift in Sources */,
 				4488695026930F64002927C5 /* FormViewModel.swift in Sources */,
+				448869FB26949418002927C5 /* ComputationResultViewModel.swift in Sources */,
 				448869EB2694910E002927C5 /* ComputationResultPresenter.swift in Sources */,
 				448869732693516E002927C5 /* AppError.swift in Sources */,
 				44886945269309C7002927C5 /* FormPresenterImplementation.swift in Sources */,

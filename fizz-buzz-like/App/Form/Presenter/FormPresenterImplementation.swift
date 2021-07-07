@@ -11,7 +11,8 @@ class FormPresenterImplementation: FormPresenter {
 
     private weak var viewContract: FormViewContract?
     private weak var delegate: FormPresenterDelegate?
-    private let mapper = FormViewModelMapper()
+    private let viewModelMapper = FormViewModelMapper()
+    private let requestMapper = FizzBuzzRequestMapper()
     private var formRequestInput = FormRequestInput.initial
 
     init(viewContract: FormViewContract,
@@ -42,28 +43,13 @@ class FormPresenterImplementation: FormPresenter {
     }
 
     func compute() {
-        var allowComputing = true
-        if Int(formRequestInput.firstDivider) == nil {
-            formRequestInput = formRequestInput.withFirstDivider("")
-            allowComputing = false
+        let result = requestMapper.map(formRequestInput: formRequestInput)
+        switch result {
+        case .success(let request):
+            delegate?.formPresenter(self, didRequestCompute: request)
+        case .failure(let error):
+            handleInputError(error)
         }
-        if Int(formRequestInput.secondDivider) == nil {
-            formRequestInput = formRequestInput.withSecondDivider("")
-            allowComputing = false
-        }
-        if
-            Int(formRequestInput.limit) == nil
-            || Int(formRequestInput.limit) ?? 0 < 1
-        {
-            formRequestInput = formRequestInput.withLimit("")
-            allowComputing = false
-        }
-        guard allowComputing else {
-            viewContract?.display(error: .invalidInput)
-            updateView(with: formRequestInput)
-            return
-        }
-        compute(input: formRequestInput)
     }
 
     func requestStatistics() {
@@ -73,26 +59,22 @@ class FormPresenterImplementation: FormPresenter {
     // MARK: - Private
 
     private func updateView(with request: FormRequestInput) {
-        let viewModel = mapper.map(model: request)
+        let viewModel = viewModelMapper.map(model: request)
         viewContract?.display(viewModel: viewModel)
     }
 
-    private func compute(input: FormRequestInput) {
-        guard
-            let firstDivider = Int(formRequestInput.firstDivider),
-            let secondDivider = Int(formRequestInput.secondDivider),
-            let limit = Int(formRequestInput.limit)
-        else {
-            assertionFailure("FormRequestInput should be valid")
-            return
+    private func handleInputError(_ inputError: FormRequestInput.Error) {
+        for error in inputError.errors {
+            switch error {
+            case .invalidFirstDivider:
+                formRequestInput = formRequestInput.withFirstDivider("")
+            case .invalidSecondDivider:
+                formRequestInput = formRequestInput.withSecondDivider("")
+            case .invalidLimit:
+                formRequestInput = formRequestInput.withLimit("")
+            }
         }
-        let request = FizzBuzzRequest(
-            firstDivider: firstDivider,
-            secondDivider: secondDivider,
-            limit: limit,
-            firstText: formRequestInput.firstText,
-            secondText: formRequestInput.secondText
-        )
-        delegate?.formPresenter(self, didRequestCompute: request)
+        viewContract?.display(error: .invalidInput)
+        updateView(with: formRequestInput)
     }
 }

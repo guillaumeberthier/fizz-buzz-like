@@ -10,7 +10,6 @@
 
 "error" = "Erreur";
 "error_invalid_input" = "Saisi non valide";
-"error_invalid_request" = "Requête non valide";
 
 "form_title" = "Requête";
 "form_compute_button" = "Calculer";

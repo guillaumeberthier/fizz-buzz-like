@@ -75,3 +75,16 @@ struct FormRequestInput {
         )
     }
 }
+
+extension FormRequestInput {
+
+    struct Error: Swift.Error, Equatable {
+        let errors: [Kind]
+
+        enum Kind {
+            case invalidFirstDivider
+            case invalidSecondDivider
+            case invalidLimit
+        }
+    }
+}

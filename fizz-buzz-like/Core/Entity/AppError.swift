@@ -12,17 +12,13 @@ enum AppError: LocalizedError {
     /// Invalid input has been set.
     /// - input was not an Int where we expected one;
     /// - input is higher than a 64 bits Int;
-    case invalidInput
-
     /// - limit should be greater than 0
-    case invalidRequest
+    case invalidInput
 
     var errorDescription: String? {
         switch self {
         case .invalidInput:
             return "error_invalid_input".localized()
-        case .invalidRequest:
-            return "error_invalid_request".localized()
         }
     }
 }

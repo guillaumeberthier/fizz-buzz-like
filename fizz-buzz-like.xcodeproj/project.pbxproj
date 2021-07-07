@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		444E39C62695E7FF00A5781D /* FizzBuzzRequestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39C52695E7FF00A5781D /* FizzBuzzRequestRepository.swift */; };
+		444E39C82695E88F00A5781D /* FizzBuzzRequestCountStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39C72695E88F00A5781D /* FizzBuzzRequestCountStatistics.swift */; };
+		444E39CA2695E98C00A5781D /* FizzBuzzRequestVolatileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39C92695E98C00A5781D /* FizzBuzzRequestVolatileRepository.swift */; };
 		448868D32692F85C002927C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448868D22692F85C002927C5 /* AppDelegate.swift */; };
 		448868DC2692F85D002927C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448868DB2692F85D002927C5 /* Assets.xcassets */; };
 		448868DF2692F85D002927C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448868DD2692F85D002927C5 /* LaunchScreen.storyboard */; };
@@ -49,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		444E39C52695E7FF00A5781D /* FizzBuzzRequestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzRequestRepository.swift; sourceTree = "<group>"; };
+		444E39C72695E88F00A5781D /* FizzBuzzRequestCountStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzRequestCountStatistics.swift; sourceTree = "<group>"; };
+		444E39C92695E98C00A5781D /* FizzBuzzRequestVolatileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzRequestVolatileRepository.swift; sourceTree = "<group>"; };
 		448868CF2692F85C002927C5 /* fizz-buzz-like.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fizz-buzz-like.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		448868D22692F85C002927C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		448868DB2692F85D002927C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		444E39C42695E7E200A5781D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				444E39C52695E7FF00A5781D /* FizzBuzzRequestRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		448868C62692F85C002927C5 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +178,7 @@
 			children = (
 				4488695F26931380002927C5 /* Entity */,
 				448869BA269459B6002927C5 /* Interactor */,
+				444E39C42695E7E200A5781D /* Repository */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -171,6 +186,7 @@
 		448869072692F8E4002927C5 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				444E39C92695E98C00A5781D /* FizzBuzzRequestVolatileRepository.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -228,6 +244,7 @@
 				448869722693516E002927C5 /* AppError.swift */,
 				44FD99072695A86200272215 /* FizzBuzzRequest */,
 				448869C626945AFE002927C5 /* FizzBuzzResponse.swift */,
+				444E39C72695E88F00A5781D /* FizzBuzzRequestCountStatistics.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -422,14 +439,17 @@
 				448869892694482D002927C5 /* FormRequestInput.swift in Sources */,
 				448869F62694933D002927C5 /* ErrorDisplayable.swift in Sources */,
 				4488696626931559002927C5 /* FormViewModelMapper.swift in Sources */,
+				444E39CA2695E98C00A5781D /* FizzBuzzRequestVolatileRepository.swift in Sources */,
 				448869BD269459CF002927C5 /* ComputeFizzBuzzInteractor.swift in Sources */,
 				448869E6269490DF002927C5 /* ComputationResultViewController.swift in Sources */,
 				4488696E2693379D002927C5 /* FormTableViewCell.swift in Sources */,
 				448869C2269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift in Sources */,
 				448869302693099F002927C5 /* FormViewContract.swift in Sources */,
 				448869F026949166002927C5 /* ComputationResultPresenterImplementation.swift in Sources */,
+				444E39C62695E7FF00A5781D /* FizzBuzzRequestRepository.swift in Sources */,
 				4488693B269309B3002927C5 /* FormViewController.swift in Sources */,
 				4488692226930445002927C5 /* ApplicationCoordinator.swift in Sources */,
+				444E39C82695E88F00A5781D /* FizzBuzzRequestCountStatistics.swift in Sources */,
 				4488695026930F64002927C5 /* FormViewModel.swift in Sources */,
 				448869FB26949418002927C5 /* ComputationResultViewModel.swift in Sources */,
 				448869EB2694910E002927C5 /* ComputationResultPresenter.swift in Sources */,

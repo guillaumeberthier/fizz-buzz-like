@@ -35,6 +35,7 @@
 		44886A412694B8C3002927C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44886A432694B8C3002927C5 /* Localizable.strings */; };
 		44886A4B2694BAC4002927C5 /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44886A4A2694BAC4002927C5 /* String+Localizable.swift */; };
 		44FD99092695A87A00272215 /* FizzBuzzRequestMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD99082695A87A00272215 /* FizzBuzzRequestMapper.swift */; };
+		44FD990B2695AE5800272215 /* FizzBuzzRequestMapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD990A2695AE5800272215 /* FizzBuzzRequestMapperTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		44886A462694B8C8002927C5 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		44886A4A2694BAC4002927C5 /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
 		44FD99082695A87A00272215 /* FizzBuzzRequestMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzRequestMapper.swift; sourceTree = "<group>"; };
+		44FD990A2695AE5800272215 /* FizzBuzzRequestMapperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzRequestMapperTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				448869CE269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift */,
+				44FD990A2695AE5800272215 /* FizzBuzzRequestMapperTest.swift */,
 				448868EB2692F85D002927C5 /* Info.plist */,
 			);
 			path = "fizz-buzz-likeTests";
@@ -440,6 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FD990B2695AE5800272215 /* FizzBuzzRequestMapperTest.swift in Sources */,
 				448869CF269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

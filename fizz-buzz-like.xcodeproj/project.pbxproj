@@ -16,6 +16,8 @@
 		444E39D62695F33A00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39D52695F33A00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementation.swift */; };
 		444E39D82695F6E400A5781D /* MockFizzBuzzRequestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39D72695F6E400A5781D /* MockFizzBuzzRequestRepository.swift */; };
 		444E39DB2695F8B400A5781D /* FizzBuzzRequestVolatileRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39DA2695F8B400A5781D /* FizzBuzzRequestVolatileRepositoryTests.swift */; };
+		444E39DD2696009C00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39DC2696009C00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementationTests.swift */; };
+		444E39DF2696010900A5781D /* AddFizzBuzzRequestInteractorImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39DE2696010900A5781D /* AddFizzBuzzRequestInteractorImplementationTests.swift */; };
 		448868D32692F85C002927C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448868D22692F85C002927C5 /* AppDelegate.swift */; };
 		448868DC2692F85D002927C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448868DB2692F85D002927C5 /* Assets.xcassets */; };
 		448868DF2692F85D002927C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448868DD2692F85D002927C5 /* LaunchScreen.storyboard */; };
@@ -67,6 +69,8 @@
 		444E39D52695F33A00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoriteFizzBuzzRequestsInteractorImplementation.swift; sourceTree = "<group>"; };
 		444E39D72695F6E400A5781D /* MockFizzBuzzRequestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFizzBuzzRequestRepository.swift; sourceTree = "<group>"; };
 		444E39DA2695F8B400A5781D /* FizzBuzzRequestVolatileRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzRequestVolatileRepositoryTests.swift; sourceTree = "<group>"; };
+		444E39DC2696009C00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoriteFizzBuzzRequestsInteractorImplementationTests.swift; sourceTree = "<group>"; };
+		444E39DE2696010900A5781D /* AddFizzBuzzRequestInteractorImplementationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFizzBuzzRequestInteractorImplementationTests.swift; sourceTree = "<group>"; };
 		448868CF2692F85C002927C5 /* fizz-buzz-like.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fizz-buzz-like.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		448868D22692F85C002927C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		448868DB2692F85D002927C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 		444E39CB2695F0CC00A5781D /* InteractorTests */ = {
 			isa = PBXGroup;
 			children = (
+				444E39DE2696010900A5781D /* AddFizzBuzzRequestInteractorImplementationTests.swift */,
+				444E39DC2696009C00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementationTests.swift */,
 				448869CE269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift */,
 				444E39D72695F6E400A5781D /* MockFizzBuzzRequestRepository.swift */,
 			);
@@ -527,6 +533,8 @@
 			files = (
 				44FD990B2695AE5800272215 /* FizzBuzzRequestMapperTest.swift in Sources */,
 				444E39DB2695F8B400A5781D /* FizzBuzzRequestVolatileRepositoryTests.swift in Sources */,
+				444E39DF2696010900A5781D /* AddFizzBuzzRequestInteractorImplementationTests.swift in Sources */,
+				444E39DD2696009C00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementationTests.swift in Sources */,
 				444E39D82695F6E400A5781D /* MockFizzBuzzRequestRepository.swift in Sources */,
 				448869CF269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift in Sources */,
 			);

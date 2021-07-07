@@ -47,16 +47,3 @@ struct FizzBuzzRequestMapper {
         return .success(request)
     }
 }
-
-extension FormRequestInput {
-
-    struct Error: Swift.Error {
-        let errors: [Kind]
-
-        enum Kind {
-            case invalidFirstDivider
-            case invalidSecondDivider
-            case invalidLimit
-        }
-    }
-}

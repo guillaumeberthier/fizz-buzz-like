@@ -27,8 +27,10 @@ private struct TestWordsFactory {
 
 class ComputeFizzBuzzInteractorTests: XCTestCase {
 
+    private let requestRepository = MockFizzBuzzRequestRepository()
+
     func testNominalCase() throws {
-        let interactor = ComputeFizzBuzzInteractorImplementation()
+        let interactor = ComputeFizzBuzzInteractorImplementation(requestRepository: requestRepository)
         interactor.execute(request: TestWordsFactory.requests[0]) { result in
             switch result {
             case .success(let response):
@@ -40,7 +42,7 @@ class ComputeFizzBuzzInteractorTests: XCTestCase {
     }
 
     func testDivideByZero() throws {
-        let interactor = ComputeFizzBuzzInteractorImplementation()
+        let interactor = ComputeFizzBuzzInteractorImplementation(requestRepository: requestRepository)
         interactor.execute(request: TestWordsFactory.requests[1]) { result in
             switch result {
             case .success(let response):
@@ -52,7 +54,7 @@ class ComputeFizzBuzzInteractorTests: XCTestCase {
     }
 
     func testDivideByOppositeNumbers() throws {
-        let interactor = ComputeFizzBuzzInteractorImplementation()
+        let interactor = ComputeFizzBuzzInteractorImplementation(requestRepository: requestRepository)
         interactor.execute(request: TestWordsFactory.requests[2]) { result in
             switch result {
             case .success(let response):
@@ -64,7 +66,7 @@ class ComputeFizzBuzzInteractorTests: XCTestCase {
     }
 
     func testInvalidLimit() throws {
-        let interactor = ComputeFizzBuzzInteractorImplementation()
+        let interactor = ComputeFizzBuzzInteractorImplementation(requestRepository: requestRepository)
         interactor.execute(request: TestWordsFactory.requests[3]) { result in
             switch result {
             case .success:

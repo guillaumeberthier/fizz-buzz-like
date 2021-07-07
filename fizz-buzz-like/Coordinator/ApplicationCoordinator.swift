@@ -39,7 +39,11 @@ extension ApplicationCoordinator: FormPresenterDelegate {
 
     func formPresenter(_ presenter: FormPresenter, didRequestCompute request: FizzBuzzRequest) {
         // TODO (Guillaume Berthier) Inject using DI
-        let interactor = ComputeFizzBuzzInteractorImplementation()
+        let requestRepository = FizzBuzzRequestVolatileRepository()
+        // TODO (Guillaume Berthier) Inject using DI
+        let interactor = ComputeFizzBuzzInteractorImplementation(
+            requestRepository: requestRepository
+        )
         let resultViewController = ComputationResultViewController()
         // TODO (Guillaume Berthier) Inject using DI
         resultViewController.presenter = ComputationResultPresenterImplementation(

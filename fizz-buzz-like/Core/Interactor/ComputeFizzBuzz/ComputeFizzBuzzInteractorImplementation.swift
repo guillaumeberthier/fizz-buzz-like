@@ -13,6 +13,10 @@ class ComputeFizzBuzzInteractorImplementation: ComputeFizzBuzzInteractor {
 
     func execute(request: FizzBuzzRequest,
                  completion: @escaping (Result<FizzBuzzResponse, AppError>) -> Void) {
+        guard request.limit > 0 else {
+            completion(.failure(.invalidInput))
+            return
+        }
         DispatchQueue.global().async {
             // TODO (Guillaume Berthier) Register request to handle statistics
             var words: [String] = []

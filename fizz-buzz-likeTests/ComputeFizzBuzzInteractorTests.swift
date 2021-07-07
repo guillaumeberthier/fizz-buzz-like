@@ -68,9 +68,9 @@ class ComputeFizzBuzzInteractorTests: XCTestCase {
         interactor.execute(request: TestWordsFactory.requests[3]) { result in
             switch result {
             case .success:
-                XCTFail("Expected error \(AppError.invalidRequest)")
+                XCTFail("Expected error \(AppError.invalidInput)")
             case .failure(let error):
-                XCTAssertEqual(error, .invalidRequest)
+                XCTAssertEqual(error, .invalidInput)
             }
         }
     }

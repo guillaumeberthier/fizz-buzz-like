@@ -12,7 +12,7 @@ struct FizzBuzzRequestCountStatistics: Equatable {
     /// The fizz buzz requests that have been the most requested
     let values: [FizzBuzzRequest]
 
-    /// That request count
+    /// The fizz buzz requests that have been the most requested count
     let count: Int
 
     /// All requests count

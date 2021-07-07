@@ -34,6 +34,7 @@
 		44886A0026949440002927C5 /* ComputationResultViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869FF26949440002927C5 /* ComputationResultViewModelMapper.swift */; };
 		44886A412694B8C3002927C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44886A432694B8C3002927C5 /* Localizable.strings */; };
 		44886A4B2694BAC4002927C5 /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44886A4A2694BAC4002927C5 /* String+Localizable.swift */; };
+		44FD99092695A87A00272215 /* FizzBuzzRequestMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD99082695A87A00272215 /* FizzBuzzRequestMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		44886A422694B8C3002927C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		44886A462694B8C8002927C5 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		44886A4A2694BAC4002927C5 /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		44FD99082695A87A00272215 /* FizzBuzzRequestMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzRequestMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,7 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				448869722693516E002927C5 /* AppError.swift */,
-				44886960269313A3002927C5 /* FizzBuzzRequest.swift */,
+				44FD99072695A86200272215 /* FizzBuzzRequest */,
 				448869C626945AFE002927C5 /* FizzBuzzResponse.swift */,
 			);
 			path = Entity;
@@ -295,6 +297,15 @@
 				44886A4A2694BAC4002927C5 /* String+Localizable.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		44FD99072695A86200272215 /* FizzBuzzRequest */ = {
+			isa = PBXGroup;
+			children = (
+				44886960269313A3002927C5 /* FizzBuzzRequest.swift */,
+				44FD99082695A87A00272215 /* FizzBuzzRequestMapper.swift */,
+			);
+			path = FizzBuzzRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +411,7 @@
 			files = (
 				44886A4B2694BAC4002927C5 /* String+Localizable.swift in Sources */,
 				448868D32692F85C002927C5 /* AppDelegate.swift in Sources */,
+				44FD99092695A87A00272215 /* FizzBuzzRequestMapper.swift in Sources */,
 				448869E1269490BA002927C5 /* ComputationResultViewContract.swift in Sources */,
 				44886A0026949440002927C5 /* ComputationResultViewModelMapper.swift in Sources */,
 				448869C726945AFE002927C5 /* FizzBuzzResponse.swift in Sources */,

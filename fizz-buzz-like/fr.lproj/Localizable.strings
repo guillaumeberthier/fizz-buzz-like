@@ -23,3 +23,4 @@
 
 "statistics_title" = "Requêtes favorites";
 "statistics_other" = "Autres requêtes";
+"statistics_empty" = "Aucune requête";

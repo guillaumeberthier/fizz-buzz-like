@@ -36,6 +36,14 @@ struct StatisticsViewModelMapper {
                 ratio: otherRatio
             )
             parts.append(otherPart)
+        } else {
+            let emptyPart = StatisticsViewModel.Part(
+                backgroundColor: .systemBackground,
+                title: "statistics_empty".localized(),
+                titleColor: .label,
+                ratio: 1.0
+            )
+            parts.append(emptyPart)
         }
         return StatisticsViewModel(requestViewModels: parts)
     }

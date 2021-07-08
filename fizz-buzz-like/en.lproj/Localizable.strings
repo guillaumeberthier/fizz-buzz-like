@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  fizz-buzz-like
+
+  Created by Guillaume Berthier on 06/07/2021.
+  
+*/
+
+"ok" = "OK";
+
+"error" = "Error";
+"error_invalid_input" = "Invalid input";
+
+"form_title" = "Request";
+"form_compute_button" = "Compute";
+"form_first_divider_placeholder" = "First divider";
+"form_second_divider_placeholder" = "Second divider";
+"form_limit_placeholder" = "Limit";
+"form_first_text_placeholder" = "First text";
+"form_second_text_placeholder" = "Second text";
+
+"computation_result_title" = "Result";
+
+"statistics_title" = "Favorite requests";
+"statistics_other" = "Other requests";
+"statistics_empty" = "No request";

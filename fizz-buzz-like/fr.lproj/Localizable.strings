@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  fizz-buzz-like
+
+  Created by Guillaume Berthier on 06/07/2021.
+  
+*/
+
+"ok" = "OK";
+
+"error" = "Erreur";
+"error_invalid_input" = "Saisi non valide";
+
+"form_title" = "Requête";
+"form_compute_button" = "Calculer";
+"form_first_divider_placeholder" = "Premier diviseur";
+"form_second_divider_placeholder" = "Second diviseur";
+"form_limit_placeholder" = "Limite";
+"form_first_text_placeholder" = "Premier texte";
+"form_second_text_placeholder" = "Second texte";
+
+"computation_result_title" = "Résultat";
+
+"statistics_title" = "Requêtes favorites";
+"statistics_other" = "Autres requêtes";
+"statistics_empty" = "Aucune requête";

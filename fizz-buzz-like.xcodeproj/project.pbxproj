@@ -7,14 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		444E39C62695E7FF00A5781D /* FizzBuzzRequestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39C52695E7FF00A5781D /* FizzBuzzRequestRepository.swift */; };
+		444E39C82695E88F00A5781D /* FizzBuzzRequestCountStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39C72695E88F00A5781D /* FizzBuzzRequestCountStatistics.swift */; };
+		444E39CA2695E98C00A5781D /* FizzBuzzRequestVolatileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39C92695E98C00A5781D /* FizzBuzzRequestVolatileRepository.swift */; };
+		444E39CF2695F15B00A5781D /* AddFizzBuzzRequestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39CE2695F15B00A5781D /* AddFizzBuzzRequestInteractor.swift */; };
+		444E39D12695F20000A5781D /* AddFizzBuzzRequestInteractorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39D02695F20000A5781D /* AddFizzBuzzRequestInteractorImplementation.swift */; };
+		444E39D42695F2FE00A5781D /* GetFavoriteFizzBuzzRequestsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39D32695F2FE00A5781D /* GetFavoriteFizzBuzzRequestsInteractor.swift */; };
+		444E39D62695F33A00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39D52695F33A00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementation.swift */; };
+		444E39D82695F6E400A5781D /* MockFizzBuzzRequestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39D72695F6E400A5781D /* MockFizzBuzzRequestRepository.swift */; };
+		444E39DB2695F8B400A5781D /* FizzBuzzRequestVolatileRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39DA2695F8B400A5781D /* FizzBuzzRequestVolatileRepositoryTests.swift */; };
+		444E39DD2696009C00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39DC2696009C00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementationTests.swift */; };
+		444E39DF2696010900A5781D /* AddFizzBuzzRequestInteractorImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39DE2696010900A5781D /* AddFizzBuzzRequestInteractorImplementationTests.swift */; };
+		444E39E52696044E00A5781D /* StatisticsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39E42696044E00A5781D /* StatisticsPresenter.swift */; };
+		444E39E72696045C00A5781D /* StatisticsPresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39E62696045C00A5781D /* StatisticsPresenterImplementation.swift */; };
+		444E39EA2696046E00A5781D /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39E92696046E00A5781D /* StatisticsViewModel.swift */; };
+		444E39EC2696049E00A5781D /* StatisticsViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39EB2696049E00A5781D /* StatisticsViewContract.swift */; };
+		444E39EE269604A400A5781D /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39ED269604A400A5781D /* StatisticsViewController.swift */; };
+		444E39F02696071C00A5781D /* StatisticsViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39EF2696071C00A5781D /* StatisticsViewModelMapper.swift */; };
+		4453D2602696F4FE00A267EC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453D25F2696F4FE00A267EC /* Color.swift */; };
+
+		4453D25C2696ED8D00A267EC /* StatisticsPartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453D25B2696ED8D00A267EC /* StatisticsPartView.swift */; };
+		4453D25E2696F00A00A267EC /* UIStackView+RemoveAllSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453D25D2696F00A00A267EC /* UIStackView+RemoveAllSubviews.swift */; };
 		448868D32692F85C002927C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448868D22692F85C002927C5 /* AppDelegate.swift */; };
-		448868D52692F85C002927C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448868D42692F85C002927C5 /* SceneDelegate.swift */; };
-		448868D72692F85C002927C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448868D62692F85C002927C5 /* ViewController.swift */; };
-		448868DA2692F85C002927C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448868D82692F85C002927C5 /* Main.storyboard */; };
 		448868DC2692F85D002927C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448868DB2692F85D002927C5 /* Assets.xcassets */; };
 		448868DF2692F85D002927C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448868DD2692F85D002927C5 /* LaunchScreen.storyboard */; };
-		448868EA2692F85D002927C5 /* fizz_buzz_likeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448868E92692F85D002927C5 /* fizz_buzz_likeTests.swift */; };
-		448868F52692F85D002927C5 /* fizz_buzz_likeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448868F42692F85D002927C5 /* fizz_buzz_likeUITests.swift */; };
+		4488692226930445002927C5 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488692126930445002927C5 /* ApplicationCoordinator.swift */; };
+		448869302693099F002927C5 /* FormViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488692F2693099F002927C5 /* FormViewContract.swift */; };
+		4488693B269309B3002927C5 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488693A269309B3002927C5 /* FormViewController.swift */; };
+		44886940269309BD002927C5 /* FormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488693F269309BD002927C5 /* FormPresenter.swift */; };
+		44886945269309C7002927C5 /* FormPresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44886944269309C7002927C5 /* FormPresenterImplementation.swift */; };
+		4488695026930F64002927C5 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488694F26930F64002927C5 /* FormViewModel.swift */; };
+		44886961269313A3002927C5 /* FizzBuzzRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44886960269313A3002927C5 /* FizzBuzzRequest.swift */; };
+		4488696626931559002927C5 /* FormViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488696526931559002927C5 /* FormViewModelMapper.swift */; };
+		4488696E2693379D002927C5 /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488696D2693379D002927C5 /* FormTableViewCell.swift */; };
+		448869732693516E002927C5 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869722693516E002927C5 /* AppError.swift */; };
+		448869892694482D002927C5 /* FormRequestInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869882694482D002927C5 /* FormRequestInput.swift */; };
+		448869BD269459CF002927C5 /* ComputeFizzBuzzInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869BC269459CF002927C5 /* ComputeFizzBuzzInteractor.swift */; };
+		448869C2269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869C1269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift */; };
+		448869C726945AFE002927C5 /* FizzBuzzResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869C626945AFE002927C5 /* FizzBuzzResponse.swift */; };
+		448869CF269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869CE269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift */; };
+		448869E1269490BA002927C5 /* ComputationResultViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869E0269490BA002927C5 /* ComputationResultViewContract.swift */; };
+		448869E6269490DF002927C5 /* ComputationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869E5269490DF002927C5 /* ComputationResultViewController.swift */; };
+		448869EB2694910E002927C5 /* ComputationResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869EA2694910E002927C5 /* ComputationResultPresenter.swift */; };
+		448869F026949166002927C5 /* ComputationResultPresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869EF26949166002927C5 /* ComputationResultPresenterImplementation.swift */; };
+		448869F62694933D002927C5 /* ErrorDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869F52694933D002927C5 /* ErrorDisplayable.swift */; };
+		448869FB26949418002927C5 /* ComputationResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869FA26949418002927C5 /* ComputationResultViewModel.swift */; };
+		44886A0026949440002927C5 /* ComputationResultViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448869FF26949440002927C5 /* ComputationResultViewModelMapper.swift */; };
+		44886A412694B8C3002927C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44886A432694B8C3002927C5 /* Localizable.strings */; };
+		44886A4B2694BAC4002927C5 /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44886A4A2694BAC4002927C5 /* String+Localizable.swift */; };
+		44FD99092695A87A00272215 /* FizzBuzzRequestMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD99082695A87A00272215 /* FizzBuzzRequestMapper.swift */; };
+		44FD990B2695AE5800272215 /* FizzBuzzRequestMapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD990A2695AE5800272215 /* FizzBuzzRequestMapperTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,30 +67,64 @@
 			remoteGlobalIDString = 448868CE2692F85C002927C5;
 			remoteInfo = "fizz-buzz-like";
 		};
-		448868F12692F85D002927C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 448868C72692F85C002927C5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 448868CE2692F85C002927C5;
-			remoteInfo = "fizz-buzz-like";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		444E39C52695E7FF00A5781D /* FizzBuzzRequestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzRequestRepository.swift; sourceTree = "<group>"; };
+		444E39C72695E88F00A5781D /* FizzBuzzRequestCountStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzRequestCountStatistics.swift; sourceTree = "<group>"; };
+		444E39C92695E98C00A5781D /* FizzBuzzRequestVolatileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzRequestVolatileRepository.swift; sourceTree = "<group>"; };
+		444E39CE2695F15B00A5781D /* AddFizzBuzzRequestInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFizzBuzzRequestInteractor.swift; sourceTree = "<group>"; };
+		444E39D02695F20000A5781D /* AddFizzBuzzRequestInteractorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFizzBuzzRequestInteractorImplementation.swift; sourceTree = "<group>"; };
+		444E39D32695F2FE00A5781D /* GetFavoriteFizzBuzzRequestsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoriteFizzBuzzRequestsInteractor.swift; sourceTree = "<group>"; };
+		444E39D52695F33A00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoriteFizzBuzzRequestsInteractorImplementation.swift; sourceTree = "<group>"; };
+		444E39D72695F6E400A5781D /* MockFizzBuzzRequestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFizzBuzzRequestRepository.swift; sourceTree = "<group>"; };
+		444E39DA2695F8B400A5781D /* FizzBuzzRequestVolatileRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzRequestVolatileRepositoryTests.swift; sourceTree = "<group>"; };
+		444E39DC2696009C00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoriteFizzBuzzRequestsInteractorImplementationTests.swift; sourceTree = "<group>"; };
+		444E39DE2696010900A5781D /* AddFizzBuzzRequestInteractorImplementationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFizzBuzzRequestInteractorImplementationTests.swift; sourceTree = "<group>"; };
+		444E39E42696044E00A5781D /* StatisticsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsPresenter.swift; sourceTree = "<group>"; };
+		444E39E62696045C00A5781D /* StatisticsPresenterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsPresenterImplementation.swift; sourceTree = "<group>"; };
+		444E39E92696046E00A5781D /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
+		444E39EB2696049E00A5781D /* StatisticsViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewContract.swift; sourceTree = "<group>"; };
+		444E39ED269604A400A5781D /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		444E39EF2696071C00A5781D /* StatisticsViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModelMapper.swift; sourceTree = "<group>"; };
+		4453D25F2696F4FE00A267EC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4453D25B2696ED8D00A267EC /* StatisticsPartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsPartView.swift; sourceTree = "<group>"; };
+		4453D25D2696F00A00A267EC /* UIStackView+RemoveAllSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+RemoveAllSubviews.swift"; sourceTree = "<group>"; };
 		448868CF2692F85C002927C5 /* fizz-buzz-like.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fizz-buzz-like.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		448868D22692F85C002927C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		448868D42692F85C002927C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		448868D62692F85C002927C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		448868D92692F85C002927C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		448868DB2692F85D002927C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		448868DE2692F85D002927C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		448868E02692F85D002927C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		448868E52692F85D002927C5 /* fizz-buzz-likeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fizz-buzz-likeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		448868E92692F85D002927C5 /* fizz_buzz_likeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fizz_buzz_likeTests.swift; sourceTree = "<group>"; };
 		448868EB2692F85D002927C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		448868F02692F85D002927C5 /* fizz-buzz-likeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fizz-buzz-likeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		448868F42692F85D002927C5 /* fizz_buzz_likeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fizz_buzz_likeUITests.swift; sourceTree = "<group>"; };
-		448868F62692F85D002927C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4488692126930445002927C5 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		4488692F2693099F002927C5 /* FormViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewContract.swift; sourceTree = "<group>"; };
+		4488693A269309B3002927C5 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		4488693F269309BD002927C5 /* FormPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPresenter.swift; sourceTree = "<group>"; };
+		44886944269309C7002927C5 /* FormPresenterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPresenterImplementation.swift; sourceTree = "<group>"; };
+		4488694F26930F64002927C5 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		44886960269313A3002927C5 /* FizzBuzzRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzRequest.swift; sourceTree = "<group>"; };
+		4488696526931559002927C5 /* FormViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModelMapper.swift; sourceTree = "<group>"; };
+		4488696D2693379D002927C5 /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		448869722693516E002927C5 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		448869882694482D002927C5 /* FormRequestInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRequestInput.swift; sourceTree = "<group>"; };
+		448869BC269459CF002927C5 /* ComputeFizzBuzzInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeFizzBuzzInteractor.swift; sourceTree = "<group>"; };
+		448869C1269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeFizzBuzzInteractorImplementation.swift; sourceTree = "<group>"; };
+		448869C626945AFE002927C5 /* FizzBuzzResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzResponse.swift; sourceTree = "<group>"; };
+		448869CE269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeFizzBuzzInteractorTests.swift; sourceTree = "<group>"; };
+		448869E0269490BA002927C5 /* ComputationResultViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationResultViewContract.swift; sourceTree = "<group>"; };
+		448869E5269490DF002927C5 /* ComputationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationResultViewController.swift; sourceTree = "<group>"; };
+		448869EA2694910E002927C5 /* ComputationResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationResultPresenter.swift; sourceTree = "<group>"; };
+		448869EF26949166002927C5 /* ComputationResultPresenterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationResultPresenterImplementation.swift; sourceTree = "<group>"; };
+		448869F52694933D002927C5 /* ErrorDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDisplayable.swift; sourceTree = "<group>"; };
+		448869FA26949418002927C5 /* ComputationResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationResultViewModel.swift; sourceTree = "<group>"; };
+		448869FF26949440002927C5 /* ComputationResultViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationResultViewModelMapper.swift; sourceTree = "<group>"; };
+		44886A3A2694B8A5002927C5 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fr; path = fr.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44886A422694B8C3002927C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		44886A462694B8C8002927C5 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		44886A4A2694BAC4002927C5 /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		44FD99082695A87A00272215 /* FizzBuzzRequestMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzRequestMapper.swift; sourceTree = "<group>"; };
+		44FD990A2695AE5800272215 /* FizzBuzzRequestMapperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzRequestMapperTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,22 +142,105 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		448868ED2692F85D002927C5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		444E39C42695E7E200A5781D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				444E39C52695E7FF00A5781D /* FizzBuzzRequestRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		444E39CB2695F0CC00A5781D /* InteractorTests */ = {
+			isa = PBXGroup;
+			children = (
+				444E39DE2696010900A5781D /* AddFizzBuzzRequestInteractorImplementationTests.swift */,
+				444E39DC2696009C00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementationTests.swift */,
+				448869CE269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift */,
+				444E39D72695F6E400A5781D /* MockFizzBuzzRequestRepository.swift */,
+			);
+			path = InteractorTests;
+			sourceTree = "<group>";
+		};
+		444E39CC2695F0D800A5781D /* MapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				44FD990A2695AE5800272215 /* FizzBuzzRequestMapperTest.swift */,
+			);
+			path = MapperTests;
+			sourceTree = "<group>";
+		};
+		444E39CD2695F14900A5781D /* AddFizzBuzzRequest */ = {
+			isa = PBXGroup;
+			children = (
+				444E39CE2695F15B00A5781D /* AddFizzBuzzRequestInteractor.swift */,
+				444E39D02695F20000A5781D /* AddFizzBuzzRequestInteractorImplementation.swift */,
+			);
+			path = AddFizzBuzzRequest;
+			sourceTree = "<group>";
+		};
+		444E39D22695F2DA00A5781D /* GetFavoriteFizzBuzzRequests */ = {
+			isa = PBXGroup;
+			children = (
+				444E39D32695F2FE00A5781D /* GetFavoriteFizzBuzzRequestsInteractor.swift */,
+				444E39D52695F33A00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementation.swift */,
+			);
+			path = GetFavoriteFizzBuzzRequests;
+			sourceTree = "<group>";
+		};
+		444E39D92695F89000A5781D /* RepositoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				444E39DA2695F8B400A5781D /* FizzBuzzRequestVolatileRepositoryTests.swift */,
+			);
+			path = RepositoryTests;
+			sourceTree = "<group>";
+		};
+		444E39E0269603A900A5781D /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				444E39E32696043D00A5781D /* UI */,
+				444E39E22696043900A5781D /* ViewModel */,
+				444E39E12696042C00A5781D /* Presenter */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		444E39E12696042C00A5781D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				444E39E42696044E00A5781D /* StatisticsPresenter.swift */,
+				444E39E62696045C00A5781D /* StatisticsPresenterImplementation.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		444E39E22696043900A5781D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				444E39E92696046E00A5781D /* StatisticsViewModel.swift */,
+				444E39EF2696071C00A5781D /* StatisticsViewModelMapper.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		444E39E32696043D00A5781D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				444E39EB2696049E00A5781D /* StatisticsViewContract.swift */,
+				444E39ED269604A400A5781D /* StatisticsViewController.swift */,
+				4453D25B2696ED8D00A267EC /* StatisticsPartView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		448868C62692F85C002927C5 = {
 			isa = PBXGroup;
 			children = (
 				448868D12692F85C002927C5 /* fizz-buzz-like */,
 				448868E82692F85D002927C5 /* fizz-buzz-likeTests */,
-				448868F32692F85D002927C5 /* fizz-buzz-likeUITests */,
 				448868D02692F85C002927C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +250,6 @@
 			children = (
 				448868CF2692F85C002927C5 /* fizz-buzz-like.app */,
 				448868E52692F85D002927C5 /* fizz-buzz-likeTests.xctest */,
-				448868F02692F85D002927C5 /* fizz-buzz-likeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,14 +258,15 @@
 			isa = PBXGroup;
 			children = (
 				448868D22692F85C002927C5 /* AppDelegate.swift */,
-				448868D42692F85C002927C5 /* SceneDelegate.swift */,
+				44886A492694BAB3002927C5 /* Shared */,
+				448869202693042A002927C5 /* Coordinator */,
 				448869052692F8DA002927C5 /* App */,
 				448869062692F8E0002927C5 /* Core */,
 				448869072692F8E4002927C5 /* Data */,
-				448868D82692F85C002927C5 /* Main.storyboard */,
 				448868DB2692F85D002927C5 /* Assets.xcassets */,
 				448868DD2692F85D002927C5 /* LaunchScreen.storyboard */,
 				448868E02692F85D002927C5 /* Info.plist */,
+				44886A432694B8C3002927C5 /* Localizable.strings */,
 			);
 			path = "fizz-buzz-like";
 			sourceTree = "<group>";
@@ -115,25 +274,21 @@
 		448868E82692F85D002927C5 /* fizz-buzz-likeTests */ = {
 			isa = PBXGroup;
 			children = (
-				448868E92692F85D002927C5 /* fizz_buzz_likeTests.swift */,
+				444E39CC2695F0D800A5781D /* MapperTests */,
+				444E39CB2695F0CC00A5781D /* InteractorTests */,
+				444E39D92695F89000A5781D /* RepositoryTests */,
 				448868EB2692F85D002927C5 /* Info.plist */,
 			);
 			path = "fizz-buzz-likeTests";
 			sourceTree = "<group>";
 		};
-		448868F32692F85D002927C5 /* fizz-buzz-likeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				448868F42692F85D002927C5 /* fizz_buzz_likeUITests.swift */,
-				448868F62692F85D002927C5 /* Info.plist */,
-			);
-			path = "fizz-buzz-likeUITests";
-			sourceTree = "<group>";
-		};
 		448869052692F8DA002927C5 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				448868D62692F85C002927C5 /* ViewController.swift */,
+				448869F42694932E002927C5 /* Error */,
+				448869DC26949039002927C5 /* ComputationResult */,
+				4488692926930957002927C5 /* Form */,
+				444E39E0269603A900A5781D /* Statistics */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -141,6 +296,9 @@
 		448869062692F8E0002927C5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4488695F26931380002927C5 /* Entity */,
+				448869BA269459B6002927C5 /* Interactor */,
+				444E39C42695E7E200A5781D /* Repository */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -148,8 +306,150 @@
 		448869072692F8E4002927C5 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				444E39C92695E98C00A5781D /* FizzBuzzRequestVolatileRepository.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		448869202693042A002927C5 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4488692126930445002927C5 /* ApplicationCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4488692926930957002927C5 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				4488694926930BFE002927C5 /* UI */,
+				4488694E26930F47002927C5 /* ViewModel */,
+				4488694A26930C06002927C5 /* Presenter */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		4488694926930BFE002927C5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4488692F2693099F002927C5 /* FormViewContract.swift */,
+				4488693A269309B3002927C5 /* FormViewController.swift */,
+				4488696D2693379D002927C5 /* FormTableViewCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4488694A26930C06002927C5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4488693F269309BD002927C5 /* FormPresenter.swift */,
+				44886944269309C7002927C5 /* FormPresenterImplementation.swift */,
+				448869882694482D002927C5 /* FormRequestInput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4488694E26930F47002927C5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4488694F26930F64002927C5 /* FormViewModel.swift */,
+				4488696526931559002927C5 /* FormViewModelMapper.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4488695F26931380002927C5 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				448869722693516E002927C5 /* AppError.swift */,
+				44FD99072695A86200272215 /* FizzBuzzRequest */,
+				448869C626945AFE002927C5 /* FizzBuzzResponse.swift */,
+				444E39C72695E88F00A5781D /* FizzBuzzRequestCountStatistics.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		448869BA269459B6002927C5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				444E39D22695F2DA00A5781D /* GetFavoriteFizzBuzzRequests */,
+				444E39CD2695F14900A5781D /* AddFizzBuzzRequest */,
+				448869BB269459BE002927C5 /* ComputeFizzBuzz */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		448869BB269459BE002927C5 /* ComputeFizzBuzz */ = {
+			isa = PBXGroup;
+			children = (
+				448869BC269459CF002927C5 /* ComputeFizzBuzzInteractor.swift */,
+				448869C1269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift */,
+			);
+			path = ComputeFizzBuzz;
+			sourceTree = "<group>";
+		};
+		448869DC26949039002927C5 /* ComputationResult */ = {
+			isa = PBXGroup;
+			children = (
+				448869DF269490A4002927C5 /* UI */,
+				448869DE2694909F002927C5 /* ViewModel */,
+				448869DD26949096002927C5 /* Presenter */,
+			);
+			path = ComputationResult;
+			sourceTree = "<group>";
+		};
+		448869DD26949096002927C5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				448869EA2694910E002927C5 /* ComputationResultPresenter.swift */,
+				448869EF26949166002927C5 /* ComputationResultPresenterImplementation.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		448869DE2694909F002927C5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				448869FA26949418002927C5 /* ComputationResultViewModel.swift */,
+				448869FF26949440002927C5 /* ComputationResultViewModelMapper.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		448869DF269490A4002927C5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				448869E0269490BA002927C5 /* ComputationResultViewContract.swift */,
+				448869E5269490DF002927C5 /* ComputationResultViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		448869F42694932E002927C5 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				448869F52694933D002927C5 /* ErrorDisplayable.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		44886A492694BAB3002927C5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				44886A4A2694BAC4002927C5 /* String+Localizable.swift */,
+				4453D25F2696F4FE00A267EC /* Color.swift */,
+				4453D25D2696F00A00A267EC /* UIStackView+RemoveAllSubviews.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		44FD99072695A86200272215 /* FizzBuzzRequest */ = {
+			isa = PBXGroup;
+			children = (
+				44886960269313A3002927C5 /* FizzBuzzRequest.swift */,
+				44FD99082695A87A00272215 /* FizzBuzzRequestMapper.swift */,
+			);
+			path = FizzBuzzRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,24 +490,6 @@
 			productReference = 448868E52692F85D002927C5 /* fizz-buzz-likeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		448868EF2692F85D002927C5 /* fizz-buzz-likeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 448868FF2692F85D002927C5 /* Build configuration list for PBXNativeTarget "fizz-buzz-likeUITests" */;
-			buildPhases = (
-				448868EC2692F85D002927C5 /* Sources */,
-				448868ED2692F85D002927C5 /* Frameworks */,
-				448868EE2692F85D002927C5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				448868F22692F85D002927C5 /* PBXTargetDependency */,
-			);
-			name = "fizz-buzz-likeUITests";
-			productName = "fizz-buzz-likeUITests";
-			productReference = 448868F02692F85D002927C5 /* fizz-buzz-likeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -224,10 +506,6 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 448868CE2692F85C002927C5;
 					};
-					448868EF2692F85D002927C5 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 448868CE2692F85C002927C5;
-					};
 				};
 			};
 			buildConfigurationList = 448868CA2692F85C002927C5 /* Build configuration list for PBXProject "fizz-buzz-like" */;
@@ -237,6 +515,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 448868C62692F85C002927C5;
 			productRefGroup = 448868D02692F85C002927C5 /* Products */;
@@ -245,7 +524,6 @@
 			targets = (
 				448868CE2692F85C002927C5 /* fizz-buzz-like */,
 				448868E42692F85D002927C5 /* fizz-buzz-likeTests */,
-				448868EF2692F85D002927C5 /* fizz-buzz-likeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -256,19 +534,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				448868DF2692F85D002927C5 /* LaunchScreen.storyboard in Resources */,
+				44886A412694B8C3002927C5 /* Localizable.strings in Resources */,
 				448868DC2692F85D002927C5 /* Assets.xcassets in Resources */,
-				448868DA2692F85C002927C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		448868E32692F85D002927C5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		448868EE2692F85D002927C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,9 +553,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				448868D72692F85C002927C5 /* ViewController.swift in Sources */,
+				44886A4B2694BAC4002927C5 /* String+Localizable.swift in Sources */,
+				444E39D62695F33A00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementation.swift in Sources */,
 				448868D32692F85C002927C5 /* AppDelegate.swift in Sources */,
-				448868D52692F85C002927C5 /* SceneDelegate.swift in Sources */,
+				44FD99092695A87A00272215 /* FizzBuzzRequestMapper.swift in Sources */,
+				4453D25C2696ED8D00A267EC /* StatisticsPartView.swift in Sources */,
+				448869E1269490BA002927C5 /* ComputationResultViewContract.swift in Sources */,
+				44886A0026949440002927C5 /* ComputationResultViewModelMapper.swift in Sources */,
+				448869C726945AFE002927C5 /* FizzBuzzResponse.swift in Sources */,
+				444E39EA2696046E00A5781D /* StatisticsViewModel.swift in Sources */,
+				44886940269309BD002927C5 /* FormPresenter.swift in Sources */,
+				4453D25E2696F00A00A267EC /* UIStackView+RemoveAllSubviews.swift in Sources */,
+				444E39EC2696049E00A5781D /* StatisticsViewContract.swift in Sources */,
+				448869892694482D002927C5 /* FormRequestInput.swift in Sources */,
+				4453D2602696F4FE00A267EC /* Color.swift in Sources */,
+				448869F62694933D002927C5 /* ErrorDisplayable.swift in Sources */,
+				4488696626931559002927C5 /* FormViewModelMapper.swift in Sources */,
+				444E39CA2695E98C00A5781D /* FizzBuzzRequestVolatileRepository.swift in Sources */,
+				448869BD269459CF002927C5 /* ComputeFizzBuzzInteractor.swift in Sources */,
+				444E39F02696071C00A5781D /* StatisticsViewModelMapper.swift in Sources */,
+				444E39EE269604A400A5781D /* StatisticsViewController.swift in Sources */,
+				448869E6269490DF002927C5 /* ComputationResultViewController.swift in Sources */,
+				444E39D42695F2FE00A5781D /* GetFavoriteFizzBuzzRequestsInteractor.swift in Sources */,
+				4488696E2693379D002927C5 /* FormTableViewCell.swift in Sources */,
+				448869C2269459DB002927C5 /* ComputeFizzBuzzInteractorImplementation.swift in Sources */,
+				448869302693099F002927C5 /* FormViewContract.swift in Sources */,
+				448869F026949166002927C5 /* ComputationResultPresenterImplementation.swift in Sources */,
+				444E39C62695E7FF00A5781D /* FizzBuzzRequestRepository.swift in Sources */,
+				4488693B269309B3002927C5 /* FormViewController.swift in Sources */,
+				4488692226930445002927C5 /* ApplicationCoordinator.swift in Sources */,
+				444E39CF2695F15B00A5781D /* AddFizzBuzzRequestInteractor.swift in Sources */,
+				444E39E52696044E00A5781D /* StatisticsPresenter.swift in Sources */,
+				444E39C82695E88F00A5781D /* FizzBuzzRequestCountStatistics.swift in Sources */,
+				444E39E72696045C00A5781D /* StatisticsPresenterImplementation.swift in Sources */,
+				4488695026930F64002927C5 /* FormViewModel.swift in Sources */,
+				448869FB26949418002927C5 /* ComputationResultViewModel.swift in Sources */,
+				448869EB2694910E002927C5 /* ComputationResultPresenter.swift in Sources */,
+				448869732693516E002927C5 /* AppError.swift in Sources */,
+				444E39D12695F20000A5781D /* AddFizzBuzzRequestInteractorImplementation.swift in Sources */,
+				44886945269309C7002927C5 /* FormPresenterImplementation.swift in Sources */,
+				44886961269313A3002927C5 /* FizzBuzzRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,15 +600,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				448868EA2692F85D002927C5 /* fizz_buzz_likeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		448868EC2692F85D002927C5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				448868F52692F85D002927C5 /* fizz_buzz_likeUITests.swift in Sources */,
+				44FD990B2695AE5800272215 /* FizzBuzzRequestMapperTest.swift in Sources */,
+				444E39DB2695F8B400A5781D /* FizzBuzzRequestVolatileRepositoryTests.swift in Sources */,
+				444E39DF2696010900A5781D /* AddFizzBuzzRequestInteractorImplementationTests.swift in Sources */,
+				444E39DD2696009C00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementationTests.swift in Sources */,
+				444E39D82695F6E400A5781D /* MockFizzBuzzRequestRepository.swift in Sources */,
+				448869CF269462BC002927C5 /* ComputeFizzBuzzInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,28 +617,25 @@
 			target = 448868CE2692F85C002927C5 /* fizz-buzz-like */;
 			targetProxy = 448868E62692F85D002927C5 /* PBXContainerItemProxy */;
 		};
-		448868F22692F85D002927C5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 448868CE2692F85C002927C5 /* fizz-buzz-like */;
-			targetProxy = 448868F12692F85D002927C5 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		448868D82692F85C002927C5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				448868D92692F85C002927C5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		448868DD2692F85D002927C5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				448868DE2692F85D002927C5 /* Base */,
+				44886A3A2694B8A5002927C5 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		44886A432694B8C3002927C5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44886A422694B8C3002927C5 /* en */,
+				44886A462694B8C8002927C5 /* fr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -343,6 +645,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -404,6 +707,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -537,46 +841,6 @@
 			};
 			name = Release;
 		};
-		448869002692F85D002927C5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QSJB7UZ723;
-				INFOPLIST_FILE = "fizz-buzz-likeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.berthierg.fizzbuzzlike.fizz-buzz-likeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "fizz-buzz-like";
-			};
-			name = Debug;
-		};
-		448869012692F85D002927C5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QSJB7UZ723;
-				INFOPLIST_FILE = "fizz-buzz-likeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.berthierg.fizzbuzzlike.fizz-buzz-likeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "fizz-buzz-like";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -603,15 +867,6 @@
 			buildConfigurations = (
 				448868FD2692F85D002927C5 /* Debug */,
 				448868FE2692F85D002927C5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		448868FF2692F85D002927C5 /* Build configuration list for PBXNativeTarget "fizz-buzz-likeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				448869002692F85D002927C5 /* Debug */,
-				448869012692F85D002927C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

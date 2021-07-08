@@ -25,6 +25,9 @@
 		444E39EE269604A400A5781D /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39ED269604A400A5781D /* StatisticsViewController.swift */; };
 		444E39F02696071C00A5781D /* StatisticsViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E39EF2696071C00A5781D /* StatisticsViewModelMapper.swift */; };
 		4453D2602696F4FE00A267EC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453D25F2696F4FE00A267EC /* Color.swift */; };
+
+		4453D25C2696ED8D00A267EC /* StatisticsPartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453D25B2696ED8D00A267EC /* StatisticsPartView.swift */; };
+		4453D25E2696F00A00A267EC /* UIStackView+RemoveAllSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453D25D2696F00A00A267EC /* UIStackView+RemoveAllSubviews.swift */; };
 		448868D32692F85C002927C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448868D22692F85C002927C5 /* AppDelegate.swift */; };
 		448868DC2692F85D002927C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448868DB2692F85D002927C5 /* Assets.xcassets */; };
 		448868DF2692F85D002927C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448868DD2692F85D002927C5 /* LaunchScreen.storyboard */; };
@@ -85,6 +88,8 @@
 		444E39ED269604A400A5781D /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		444E39EF2696071C00A5781D /* StatisticsViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModelMapper.swift; sourceTree = "<group>"; };
 		4453D25F2696F4FE00A267EC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4453D25B2696ED8D00A267EC /* StatisticsPartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsPartView.swift; sourceTree = "<group>"; };
+		4453D25D2696F00A00A267EC /* UIStackView+RemoveAllSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+RemoveAllSubviews.swift"; sourceTree = "<group>"; };
 		448868CF2692F85C002927C5 /* fizz-buzz-like.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fizz-buzz-like.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		448868D22692F85C002927C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		448868DB2692F85D002927C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -226,6 +231,7 @@
 			children = (
 				444E39EB2696049E00A5781D /* StatisticsViewContract.swift */,
 				444E39ED269604A400A5781D /* StatisticsViewController.swift */,
+				4453D25B2696ED8D00A267EC /* StatisticsPartView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -432,6 +438,7 @@
 			children = (
 				44886A4A2694BAC4002927C5 /* String+Localizable.swift */,
 				4453D25F2696F4FE00A267EC /* Color.swift */,
+				4453D25D2696F00A00A267EC /* UIStackView+RemoveAllSubviews.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -550,11 +557,13 @@
 				444E39D62695F33A00A5781D /* GetFavoriteFizzBuzzRequestsInteractorImplementation.swift in Sources */,
 				448868D32692F85C002927C5 /* AppDelegate.swift in Sources */,
 				44FD99092695A87A00272215 /* FizzBuzzRequestMapper.swift in Sources */,
+				4453D25C2696ED8D00A267EC /* StatisticsPartView.swift in Sources */,
 				448869E1269490BA002927C5 /* ComputationResultViewContract.swift in Sources */,
 				44886A0026949440002927C5 /* ComputationResultViewModelMapper.swift in Sources */,
 				448869C726945AFE002927C5 /* FizzBuzzResponse.swift in Sources */,
 				444E39EA2696046E00A5781D /* StatisticsViewModel.swift in Sources */,
 				44886940269309BD002927C5 /* FormPresenter.swift in Sources */,
+				4453D25E2696F00A00A267EC /* UIStackView+RemoveAllSubviews.swift in Sources */,
 				444E39EC2696049E00A5781D /* StatisticsViewContract.swift in Sources */,
 				448869892694482D002927C5 /* FormRequestInput.swift in Sources */,
 				4453D2602696F4FE00A267EC /* Color.swift in Sources */,

@@ -18,5 +18,6 @@ class StatisticsPresenterImplementation: StatisticsPresenter {
     // MARK: - StatisticsPresenter
 
     func start() {
+        // TODO (Guillaume Berthier) Get and display stats
     }
 }

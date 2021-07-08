@@ -34,7 +34,11 @@ extension ApplicationCoordinator: FormPresenterDelegate {
     // MARK: - FormPresenterDelegate
 
     func formPresenterDidRequestStatistics(_ presenter: FormPresenter) {
-        // TODO (Guillaume Berthier) Display stats
+        let statisticsViewController = StatisticsViewController()
+        statisticsViewController.presenter = StatisticsPresenterImplementation(
+            viewContract: statisticsViewController
+        )
+        navigationViewController.pushViewController(statisticsViewController, animated: true)
     }
 
     func formPresenter(_ presenter: FormPresenter, didRequestCompute request: FizzBuzzRequest) {

@@ -13,6 +13,9 @@ class ApplicationCoordinator {
     private let window: UIWindow
     private let navigationViewController = UINavigationController()
 
+    // TODO (Guillaume Berthier) Inject using DI
+    let requestRepository = FizzBuzzRequestVolatileRepository()
+
     init(window: UIWindow) {
         self.window = window
     }
@@ -34,16 +37,20 @@ extension ApplicationCoordinator: FormPresenterDelegate {
     // MARK: - FormPresenterDelegate
 
     func formPresenterDidRequestStatistics(_ presenter: FormPresenter) {
+        // TODO (Guillaume Berthier) Inject using DI
+        let getStatisticsInteractor = GetFavoriteFizzBuzzRequestsInteractorImplementation(
+            requestRepository: requestRepository
+        )
         let statisticsViewController = StatisticsViewController()
+        // TODO (Guillaume Berthier) Inject using DI
         statisticsViewController.presenter = StatisticsPresenterImplementation(
-            viewContract: statisticsViewController
+            viewContract: statisticsViewController,
+            getStatisticsInteractor: getStatisticsInteractor
         )
         navigationViewController.pushViewController(statisticsViewController, animated: true)
     }
 
     func formPresenter(_ presenter: FormPresenter, didRequestCompute request: FizzBuzzRequest) {
-        // TODO (Guillaume Berthier) Inject using DI
-        let requestRepository = FizzBuzzRequestVolatileRepository()
         // TODO (Guillaume Berthier) Inject using DI
         let interactor = ComputeFizzBuzzInteractorImplementation(
             requestRepository: requestRepository

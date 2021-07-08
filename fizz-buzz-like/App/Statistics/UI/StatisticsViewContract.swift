@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol StatisticsViewContract: AnyObject {
+protocol StatisticsViewContract: AnyObject, ErrorDisplayable {
     func display(viewModel: StatisticsViewModel)
 }

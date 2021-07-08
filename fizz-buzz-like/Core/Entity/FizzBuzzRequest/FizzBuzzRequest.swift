@@ -13,7 +13,7 @@ import Foundation
  If *secondDivider* divides current number, print *secondText*;
  Otherwise print current number.
  */
-struct FizzBuzzRequest: Equatable {
+struct FizzBuzzRequest: Hashable {
 
     let firstDivider: Int
 

@@ -9,6 +9,12 @@ import Foundation
 
 class ComputeFizzBuzzInteractorImplementation: ComputeFizzBuzzInteractor {
 
+    private let requestRepository: FizzBuzzRequestRepository
+
+    init(requestRepository: FizzBuzzRequestRepository) {
+        self.requestRepository = requestRepository
+    }
+
     // MARK: - ComputeFizzBuzzInteractor
 
     func execute(request: FizzBuzzRequest,
@@ -17,8 +23,8 @@ class ComputeFizzBuzzInteractorImplementation: ComputeFizzBuzzInteractor {
             completion(.failure(.invalidInput))
             return
         }
+        requestRepository.add(request: request) { _ in /* no-op */ }
         DispatchQueue.global().async {
-            // TODO (Guillaume Berthier) Register request to handle statistics
             var words: [String] = []
             for i in 1...request.limit {
                 var word = String(i)

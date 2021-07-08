@@ -20,3 +20,7 @@
 "form_second_text_placeholder" = "Second texte";
 
 "computation_result_title" = "Résultat";
+
+"statistics_title" = "Requêtes favorites";
+"statistics_other" = "Autres requêtes";
+"statistics_empty" = "Aucune requête";

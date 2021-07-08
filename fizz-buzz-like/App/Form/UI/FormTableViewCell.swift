@@ -10,7 +10,6 @@ import UIKit
 
 private enum Constants {
     static let margin: CGFloat = 16.0
-    static let height: CGFloat = 44.0
 }
 
 protocol FormTableViewCellDelegate: AnyObject {
@@ -51,8 +50,8 @@ class FormTableViewCell: UITableViewCell {
         contentView.addSubview(textField)
         textField.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            textField.topAnchor.constraint(equalTo: contentView.topAnchor),
-            textField.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            textField.topAnchor.constraint(equalTo: contentView.topAnchor, constant: Constants.margin),
+            textField.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -Constants.margin),
             textField.trailingAnchor.constraint(
                 equalTo: contentView.trailingAnchor,
                 constant: -Constants.margin
@@ -61,7 +60,6 @@ class FormTableViewCell: UITableViewCell {
                 equalTo: contentView.leadingAnchor,
                 constant: Constants.margin
             ),
-            textField.heightAnchor.constraint(equalToConstant: Constants.height),
         ])
     }
 

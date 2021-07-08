@@ -52,6 +52,7 @@ class StatisticsPartView: UIView {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -Constants.margin),
+            // This constraint may be broken if this view has not enough height to be laid out
             titleLabel.topAnchor.constraint(greaterThanOrEqualTo: topAnchor, constant: Constants.margin),
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Constants.margin),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Constants.margin),

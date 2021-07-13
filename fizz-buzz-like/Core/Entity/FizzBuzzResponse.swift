@@ -10,5 +10,5 @@ import Foundation
 struct FizzBuzzResponse {
 
     /// Values associated with the new current progression
-    let words: [String]
+    let word: String
 }

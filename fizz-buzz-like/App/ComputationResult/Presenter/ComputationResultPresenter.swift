@@ -8,5 +8,6 @@
 import Foundation
 
 protocol ComputationResultPresenter {
-    func start()
+    var limit: Int { get }
+    func compute(index: Int) -> String
 }

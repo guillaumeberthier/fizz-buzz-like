@@ -19,6 +19,8 @@ extension UIColor {
         )
     }
 
+    // TODO (Guillaume Berthier) Remove useless code
+
     // Courtesy of
     // https://www.hackingwithswift.com/example-code/uicolor/how-to-read-the-red-green-blue-and-alpha-color-components-from-a-uicolor
     private var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {

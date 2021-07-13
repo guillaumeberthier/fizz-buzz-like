@@ -9,5 +9,4 @@ import Foundation
 
 /// Textual representation of the fizz buzz result
 struct ComputationResultViewModel {
-    let text: String
 }

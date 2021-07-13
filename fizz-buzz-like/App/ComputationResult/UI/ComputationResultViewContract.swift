@@ -8,7 +8,6 @@
 import Foundation
 
 protocol ComputationResultViewContract: AnyObject, ErrorDisplayable {
-    func display(viewModel: ComputationResultViewModel)
     func showLoading()
     func hideLoading()
 }

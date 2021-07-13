@@ -10,8 +10,6 @@ import Foundation
 struct ComputationResultViewModelMapper {
 
     func map(response: FizzBuzzResponse) -> ComputationResultViewModel {
-        return ComputationResultViewModel(
-            text: response.words.joined(separator: ",")
-        )
+        return ComputationResultViewModel()
     }
 }

@@ -24,24 +24,11 @@ class ComputationResultPresenterImplementation: ComputationResultPresenter {
 
     // MARK: - ComputationResultPresenter
 
-    func start() {
-        compute(request: fizzBuzzRequest)
+    func compute(index: Int) -> String {
+        return computeInteractor.execute(request: fizzBuzzRequest, index: index).word
     }
 
-    // MARK: - Private
-
-    private func compute(request: FizzBuzzRequest) {
-        viewContract?.showLoading()
-        computeInteractor.execute(request: request) { [weak self] result in
-            guard let self = self else { return }
-            self.viewContract?.hideLoading()
-            switch result {
-            case .success(let response):
-                let viewModel = self.mapper.map(response: response)
-                self.viewContract?.display(viewModel: viewModel)
-            case .failure(let error):
-                self.viewContract?.display(error: error)
-            }
-        }
+    var limit: Int {
+        return fizzBuzzRequest.limit
     }
 }

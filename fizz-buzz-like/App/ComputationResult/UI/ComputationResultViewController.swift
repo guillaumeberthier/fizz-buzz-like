@@ -16,20 +16,17 @@ class ComputationResultViewController: UIViewController, ComputationResultViewCo
 
     var presenter: ComputationResultPresenter?
 
-    private lazy var textView = self.createTextView()
+    private lazy var tableView = self.createTableView()
     private lazy var loadingView = UIActivityIndicatorView(style: .large)
+
+    private var viewModel = ComputationResultViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        presenter?.start()
     }
 
     // MARK: - ComputationResultViewContract
-
-    func display(viewModel: ComputationResultViewModel) {
-        textView.text = viewModel.text
-    }
 
     func showLoading() {
         loadingView.startAnimating()
@@ -44,30 +41,40 @@ class ComputationResultViewController: UIViewController, ComputationResultViewCo
     private func setup() {
         title = "computation_result_title".localized()
         view.backgroundColor = .systemBackground
-        view.addSubview(textView)
-        textView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(tableView)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(loadingView)
         loadingView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            textView.topAnchor.constraint(equalTo: view.topAnchor),
-            textView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            textView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            textView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
     }
 
-    private func createTextView() -> UITextView {
-        let textView = UITextView()
-        textView.isEditable = false
-        textView.font = .preferredFont(forTextStyle: .body)
-        textView.contentInset = UIEdgeInsets(
-            top: Constants.margin,
-            left: Constants.margin,
-            bottom: Constants.margin,
-            right: Constants.margin
-        )
-        return textView
+    private func createTableView() -> UITableView {
+        let tableView = UITableView()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.dataSource = self
+        return tableView
+    }
+}
+
+extension ComputationResultViewController: UITableViewDataSource {
+
+    // MARK: - UITableViewDataSource
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return presenter?.limit ?? 0
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        let value = presenter?.compute(index: indexPath.row)
+        cell?.textLabel?.text = value
+        return cell ?? UITableViewCell()
     }
 }

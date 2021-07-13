@@ -12,6 +12,5 @@ import Foundation
 protocol ComputeFizzBuzzInteractor {
 
     // TODO (Guillaume Berthier) Handle progression
-    func execute(request: FizzBuzzRequest,
-                 completion: @escaping (Result<FizzBuzzResponse, AppError>) -> Void)
+    func execute(request: FizzBuzzRequest, index: Int) -> FizzBuzzResponse
 }
